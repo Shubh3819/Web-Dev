@@ -1,0 +1,2 @@
+I think i found the solutiion to my problem and now i am going to try and push this file
+inside the github repo

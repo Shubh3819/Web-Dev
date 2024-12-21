@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "card",
+=======
+  "name": "vite",
+>>>>>>> 6d8718e498b0b286459ae242493fe5c176de08c5
   "private": true,
   "version": "0.0.0",
   "type": "module",

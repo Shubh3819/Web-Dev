@@ -1,0 +1,30 @@
+/* .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border: 2px solid;
+    background-color: blue;
+} */
+
+/* Ensure the parent container fills the viewport */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #073767; /* Optional: Light background color for better visibility */
+  }
+  
+  /* Center and style the card */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for better appearance */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center; /* Optional: Center the text */
+    max-width: 300px; /* Optional: Set a max width */
+    padding: 16px; /* Add some padding */
+  }
+  

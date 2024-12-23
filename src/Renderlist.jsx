@@ -1,4 +1,6 @@
-function Renderlist(){
+import PropTypes from 'prop-types';
+
+function Renderlist(props){
         const fruits =[{id:1,name: "apple",calories:95},
             {id:2,name: "orange" ,calories:45},
             {id:3,name: "banana" ,calories:105},
@@ -15,6 +17,17 @@ function Renderlist(){
             return(
                 <ol>{listItems}</ol>
             );
+}
+
+Renderlist.propTypes = {
+    category:PropTypes.string,
+    ite,s:PropTypes.arrayof(PropTypes.shape({id: PropTypes.number,
+        name: PropTypes.string,
+        calories: PropTypes.number})),
+    }
+Renderlist.defaultProps = {
+    category:"Category",
+    items:[],
 }
 
 export default Renderlist;

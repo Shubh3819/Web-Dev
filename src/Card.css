@@ -1,30 +1,51 @@
-/* .card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    border: 2px solid;
-    background-color: blue;
-} */
+/* Card.css */
+.card {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  width: 300px; /* Set a fixed width for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensures content stays within rounded borders */
+  background-color: #fff; /* White background */
+  margin: 20px auto; /* Center the card with auto margins */
+  text-align: center; /* Center-align text */
+}
 
-/* Ensure the parent container fills the viewport */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #073767; /* Optional: Light background color for better visibility */
-  }
-  
-  /* Center and style the card */
-  .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for better appearance */
-    border-radius: 8px; /* Rounded corners */
-    overflow: hidden;
-    background-color: #fff;
-    text-align: center; /* Optional: Center the text */
-    max-width: 300px; /* Optional: Set a max width */
-    padding: 16px; /* Add some padding */
-  }
-  
+.card img {
+  border-bottom: 1px solid #ddd; /* Add a border between image and body */
+  width: 100%; /* Make the image span the full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 15px; /* Add some padding inside the card */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Slightly larger font size */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 10px; /* Space below the title */
+  color: #333; /* Darker text color */
+}
+
+.card-text {
+  font-size: 0.9rem; /* Slightly smaller font size */
+  color: #666; /* Gray text color */
+  margin-bottom: 15px; /* Space below the text */
+}
+
+.btn {
+  display: inline-block; /* Makes the button inline */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 0.9rem; /* Font size */
+  font-weight: bold; /* Bold font */
+  color: #fff; /* White text */
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}

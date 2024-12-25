@@ -1,0 +1,12 @@
+.hello ul li {
+    width: 200px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .hello ul li:hover {
+    width: 200px;
+    background-color:white;
+    color: #333;
+  }
+  

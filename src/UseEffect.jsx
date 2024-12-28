@@ -5,6 +5,7 @@
 
 
 import React,{ useEffect , useState } from "react";
+import { use } from "react";
 
 function UseEffect(){
 
@@ -19,6 +20,10 @@ function UseEffect(){
             window.removeEventListener("resize",handleResize);
         }
     })
+
+    useEffect(() => {
+        document.title = `Size: ${width} x ${height}`;
+    },[width,height])
 
     function handleResize(){
         setWidth(window.innerWidth);

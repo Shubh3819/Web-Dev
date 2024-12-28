@@ -6,10 +6,12 @@
 // import Renderlist from './Renderlist.jsx';
 // import State from './State.jsx';
 //import Hookstate from "./hookstate.jsx";
+import UseEffect from "./UseEffect.jsx";
 
 function App() {
   return (
     <>
+    <UseEffect />
     {/* <State />     */}
     {/* <Header />
     <Footer />

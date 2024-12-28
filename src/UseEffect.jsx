@@ -11,8 +11,14 @@ function UseEffect(){
     const[width,setWidth] = useState(window.innerWidth);
     const[height,setHeight] = useState(window.innerHeight);
 
-    window.addEventListener("resize",handleResize);
-    console.log("Event Listener Added");
+    useEffect(() => {
+        window.addEventListener("resize",handleResize);
+        console.log("Event Listener Added");
+
+        return() => {
+            window.removeEventListener("resize",handleResize);
+        }
+    })
 
     function handleResize(){
         setWidth(window.innerWidth);

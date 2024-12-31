@@ -6,12 +6,15 @@
 // import Renderlist from './Renderlist.jsx';
 // import State from './State.jsx';
 //import Hookstate from "./hookstate.jsx";
-import UseEffect from "./UseEffect.jsx";
+//import UseEffect from "./UseEffect.jsx";
 
 function App() {
   return (
     <>
-    <UseEffect />
+    <h1 className="text-5xl font-bold underline">
+      Hello world!
+    </h1>
+
     {/* <State />     */}
     {/* <Header />
     <Footer />
@@ -20,6 +23,7 @@ function App() {
     <Button />
     <Renderlist />
     <Hookstate />
+    <UseEffect />
      */}
      
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Shubh</title>
+    <link rel="stylesheet" href="formscript.css">
+</head>
+<body>
+    <h3>Registration</h1>
+    <form action="/action.php" method="post"> 
+        <div>
+        <label for="username">Enter your full name</label>
+        <input type="text" name="username" placeholder="Ex:David Chatterjee"></div>
+        <div><label><form for="password">Enter your password</label>
+        <input type="password" name="password" placeholder="Ex:Hello@123"></div>
+        <div>
+        <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="male"><label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="age" name="Age">
+            <label for="age">Are you 18+?</label>
+        </div>
+        <div>
+            <textarea name="Comment" rows="10" cols="30" placeholder="Write about yourself"></textarea>
+        </div>
+        <div><select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="Watermelon">Watermelon</option>
+        </select></div>
+        <div><input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

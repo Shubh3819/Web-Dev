@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/71417027be.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(193, 197, 202);
+        }
+
+        /**********************************MAIN NAVBAR**************************************************************************/
+        .navbar {
+            position: sticky;
+            top: 0%;
+            background-color: rgb(1, 1, 37);
+            display: flex;
+            width: 100%;
+            height: 80px;
+            z-index: 1;
+            padding-left: 20px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar .logo img {
+            top: 20px;
+            position: absolute;
+            LEFT: 10px;
+        }
+
+        input {
+            border: 0px;
+            position: absolute;
+            top: 10px;
+            left: 391px;
+            width: 10cm;
+            height: 50px;
+        }
+
+        select {
+            border: 0px;
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            left: 350px;
+            width: 1.1cm;
+            height: 50px;
+            background-color: grey;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+
+        .findimage img {
+            position: absolute;
+            top: 10px;
+            left: 767px;
+            width: 40px;
+            height: 50px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            background-color: rgb(201, 149, 66);
+        }
+
+        .logo img:hover {
+            border: 1px solid white;
+        }
+
+        .locleft {
+            position: absolute;
+            top: 20px;
+            left: 114px;
+            z-index: 10;
+            font-size: 15px;
+            color: white;
+        }
+
+        .right {
+            display: flex;
+            position: absolute;
+            top: 10px;
+            left: 1000px;
+        }
+
+        .right .right1 {
+            position: relative;
+            top: -15px;
+            left: -400px;
+            margin-right: 30px;
+        }
+
+        .right .right1 select {
+            background-color: black;
+            color: white;
+        }
+
+        .right .right2 {
+            margin-right: 30px;
+        }
+
+        i {
+            color: white;
+            font-style: normal;
+            font-weight: bold;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            border: 1px solid white;
+        }
+
+        /*************************************CARD******************************************************************************/
+
+        .background {
+            position: relative;
+            top: 0%;
+            background-image: url(https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg);
+            background-size: cover;
+            height: 400px;
+
+        }
+
+        .cardmain {
+            justify-content: center;
+            padding: 200px;
+            display: flex;
+        }
+
+        .card {
+            background-color: white;
+            width: auto;
+            padding: 34px 0px 34px 5px;
+            margin: 4px;
+        }
+
+        .card .image {
+            padding: 5px;
+        }
+
+        .cardmain a {
+            color: rgb(0, 102, 165);
+            text-decoration: none;
+        }
+
+        /***************************************************************Next card slot**********************************/
+        .nextcard {
+            background-color: white;
+            position: relative;
+            top: 170px;
+            margin: 30px;
+        }
+
+        .innernextcard {
+            display: flex;
+        }
+
+        .innernextcard img {
+            margin-right: 20px;
+        }
+
+        .nextcard a {
+            text-decoration: none;
+            color: rgb(0, 102, 165);
+        }
+
+        /**********************************************NEXT CARD2*******************************************************/
+        .nextcard2 {
+            background-color: white;
+            position: relative;
+            top: 170px;
+            margin: 30px;
+        }
+
+        .innernextcard2 {
+            display: flex;
+        }
+
+        .innernextcard2 img {
+            margin-right: 20px;
+        }
+
+        .nextcard2 a {
+            text-decoration: none;
+            color: rgb(0, 102, 165);
+        }
+
+        /************************************YAAAY******************************************************************/
+        .yay {
+            position: relative;
+            top: 170px;
+            display: flex;
+        }
+
+        .yay .card {
+            background-color: white;
+            width: auto;
+            padding: 34px 0px 34px 5px;
+            margin-left: 30px;
+        }
+
+        /**********************************************NEXT CARD3*******************************************************/
+        .nextcard3 {
+            background-color: white;
+            position: relative;
+            top: 170px;
+            margin: 30px;
+        }
+
+        .innernextcard3 {
+            display: flex;
+        }
+
+        .innernextcard3 img {
+            margin-right: 20px;
+        }
+
+        .nextcard3 a {
+            text-decoration: none;
+            color: rgb(0, 102, 165);
+        }
+
+        /***************************************************last-sign-in**************************************************/
+        .sign-in {
+            background-color: white;
+            position: relative;
+            top: 170px;
+            height: 200px;
+            padding-top: 2cm;
+
+        }
+
+        .border-sign {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.5px solid black;
+            border-radius: 2px;
+            height: 150px;
+
+        }
+
+        .button {
+            background-color: orange;
+            padding: 10px 20px;
+            box-shadow: 2px;
+            border-radius: 2px;
+            width: 3m;
+            height: 15px;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .grey {
+            position: relative;
+            top: 4cm;
+            background-color: rgb(60, 62, 87);
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+        }
+
+        .links {
+            position: relative;
+            top: 150px;
+            background-color: rgb(41, 42, 61);
+            display: flex;
+            color: white;
+
+            .linkcard {
+                margin-right: 100px;
+
+                li {
+                    color: rgb(214, 208, 208);
+                    list-style: none;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    text-decoration: solid;
+                }
+            }
+        }
+
+        /******************************************final**********************************************/
+        .final {
+            background-color: rgb(41, 42, 61);
+            position: relative;
+            top: 150px;
+            color: rgb(214, 208, 208);
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------------------NAVBAR------------------------------------------------------------------>
+    <div class="navbar">
+        <div class="logo"><a href="#"><img src="amazon.png" width="100px" height="40px" alt=""></a></div>
+
+        <div class="locleft"><a href="#">
+                <div style="color: gray; display: inline; margin: 0px;">Delivering to gurugram 122002</div><br>
+                <i class="fa-solid fa-location-dot"><b>Update location</b>
+                </i>
+            </a></div>
+
+        <select name="Select" id="">
+            <option value="Choose">All Categories</option>
+            <option value="op1">Alexa Skills</option>
+            <option value="op2">Amazon Devices</option>
+            <option value="op3">Amazon Fashion</option>
+            <option value="op3">Amazon Pharmacy</option>
+        </select>
+        <form>
+            <input type="search" id="gsearch" name="gsearch" placeholder="Search Amazon.in">
+        </form>
+        <div class="findimage"><a href="#"><img src="magnify.png"></a></div>
+
+        <div class="right">
+            <div class="right1"><a href="#"><i><select name="Select" id="">
+                            <option value="Choose">ENGLISH</option>
+                            <option value="op1">HINDI</option>
+                            <option value="op2">BENGALI</option>
+                            <option value="op3">BHOJPURI</option>
+                            <option value="op3">MARATHI</option>
+                        </select></i></a></div>
+            <div class="right2"><a href="#"><i>SIGN IN</i></a></div>
+            <div class="right3"><a href="#"><i>RETURNS & Orders</i></a></div>
+            <div class="right4"><a href="#"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGd2sjxFQjvIeJHrB6h01ODTyCuzYmEwvy1w&s"
+                        height="30px" alt=""></a></div>
+        </div>
+    </div>
+    <!----------------------------CARD1------------------------------------------------------------------------------------->
+    <div class="background">
+        <div class="cardmain">
+            <div class="card">
+                <center><b>Gaming accessories</b></center>
+                <div class="image">
+                    <a href="#"><img width="280px" height="200px"
+                            src="https://m.media-amazon.com/images/I/91aoya-IPSL._AC_UY327_FMwebp_QL65_.jpg" alt=""></a>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <!------------------------------CARD2----------------------------------------------00000000------------------------------>
+            <div class="card">
+                <center><b>Shop deals in Fashion</b></center>
+                <div class="image">
+                    <a href="#"><img width="280px" height="200px"
+                            src="https://m.media-amazon.com/images/I/616iBhe2roL._AC_SY290_.jpg" alt=""></a>
+                    <a href="#">View all</a>
+                </div>
+            </div>
+            <!----------------------------CARD3-------------------------------------------------------------------------------->
+
+            <div class="card">
+                <center><b>Deals in PCs</b></center>
+                <div class="image">
+                    <a href="#"><img width="280px" height="200px"
+                            src="https://m.media-amazon.com/images/I/71Zf9uUp+GL._AC_SY400_.jpg" alt=""></a>
+                    <a href="#">Explore all offers</a>
+                </div>
+            </div>
+
+            <!----------------------------CARD4--------------------------------------------------------------------------------->
+
+            <div class="card">
+                <center><b>Refresh your space</b></center>
+                <div class="image">
+                    <a href="#"><img width="280px" height="200px"
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Lawn_Garden/Ud/2024/PCCC/758x608_updated._SY608_CB554999408_.jpg"
+                            alt=""></a>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------rest--------------------------------------------------------->
+    <div class="nextcard">
+        <b>&nbsp &nbsp Up to 60% off | Electronics & accessories curated from stores nearby &nbsp &nbsp<a href="#">See
+                all offers</a></b><br><br>
+        <div class="innernextcard"><a href="#"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/51oQwOoRPEL._AC_SY200_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/51JYVN1P-tL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/617LtpqwmHL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/61Mh3p4B-6L._AC_SY400_.jpg"><img height="150px"
+                    src="https://m.media-amazon.com/images/I/414HfX9HvQL._AC_SY400_.jpg"><img height="200px"
+                    width="150px" src="https://m.media-amazon.com/images/I/71zbWSRMaYL._AC_SY400_.jpg"></a></div>
+    </div>
+
+    <div class="nextcard2">
+        <b>&nbsp &nbsp Electric vehicles & motorbikes &nbsp &nbsp<a href="#">See all offers</a></b><br><br>
+        <div class="innernextcard2"><a href="#"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/71sitt8x2zL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/41y1WiAk0CL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/71TlKl50j9L._AC_SY400_.jpg"><img height="150px"
+                    src="https://m.media-amazon.com/images/I/51n+OG3t0VL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/51Ijn8LTCDL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/41Rt-JZ1dyL._AC_SY400_.jpg"></a></div>
+    </div>
+
+    <!--------------------------------------LESSGOO------------------------------------------------------------------------------->
+    <div class="yay">
+        <div class="card">
+            <center><b>Best Sellers in Toys & Games</b></center>
+            <div class="image">
+                <a href="#"><img width="260" height="200px"
+                        src="https://m.media-amazon.com/images/I/61A2ddWFQxL._AC_SY340_.jpg" alt="" />
+                </a>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <center><b>Minimum 50% off | Indoor plants</b></center>
+            <div class="image"><a href="#">
+                    <img width="260" height="200px"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Lawn_Garden/Ud/2024/PCCC/758x608_updated._SY608_CB554999408_.jpg"
+                        alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <center><b>Starting ₹99 | Start your fitness journey</b></center>
+            <div class="image"><a href="#">
+                    <img width="260" height="200px"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Sports/GW_Desktop/1199101_758x608_New_compressed._SY608_CB448277514_.jpg"
+                        alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <center><b>Bestsellers | Up to 60% off</b></center>
+            <div class="image"><a href="#">
+                    <img width="260" height="200px"
+                        src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/June/BTF/17th/Pcqc2-2-hi._SY232_CB555273362_.jpg"
+                        alt="" />
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="nextcard3">
+        <b>&nbsp &nbsp Up to 40% off | Inverter batteries & combos &nbsp &nbsp<a href="#">See all offers</a></b><br><br>
+        <div class="innernextcard3"><a href="#"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/61pUvWJ3afL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/61ZrbUGuZoL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/9165y8IZHkL._AC_SY400_.jpg"><img height="200px"
+                    src="https://m.media-amazon.com/images/I/31A7EIjB0WL._AC_SY400_.jpg"></a></div>
+    </div>
+    <!---------------------------------Sign IN last-------------------------------------------------------------------------------------->
+    <div class="sign-in">
+        <div class="border-sign">
+            <center>Sign in for the best experience
+                <div class="button"><a href="#"><b>SIGN IN</b></a></div>
+                New customer?<a href="#">Start here</a>
+            </center>
+        </div>
+    </div>
+
+    <div class="grey"><a href="#">
+            <center>Back to top</center>
+        </a></div>
+
+
+    <div class="links">
+        <div class="linkcard">
+            <center><b>Let Us Help You</b></center>
+            <a href="#">
+                <li>
+                    <ul>COVID-19 and Amazon</ul>
+                    <ul>Your Account</ul>
+                    <ul>Returns Centre</ul>
+                    <ul>Purchase Protection</ul>
+                    <ul>Amazon App Download</ul>
+                    <ul>Help</ul>
+                </li>
+            </a>
+        </div>
+
+
+
+        <div class="linkcard">
+            <center><b>Let Us Help You</b></center>
+            <a href="#">
+                <li>
+                    <ul>COVID-19 and Amazon</ul>
+                    <ul>Your Account</ul>
+                    <ul>Returns Centre</ul>
+                    <ul>Purchase Protection</ul>
+                    <ul>Amazon App Download</ul>
+                    <ul>Help</ul>
+                </li>
+            </a>
+        </div>
+
+
+
+        <div class="linkcard"><b>
+                <center>Let Us Help You
+            </b></center>
+            <a href="#">
+                <li>
+                    <ul>COVID-19 and Amazon</ul>
+                    <ul>Sell on Amazon</ul>
+                    <ul>Sell under Amazon Accelerator</ul>
+                    <ul>Become an Affiliate</ul>
+                    <ul>Advertise Your Products</ul>
+                    <ul>Amazon Pay on Merchants</ul>
+                </li>
+            </a>
+        </div>
+
+
+        <div class="linkcard">
+            <center><b>Let Us Help You</b></center>
+            <a href="#">
+                <li>
+                    <ul>COVID-19 and Amazon</ul>
+                    <ul>Your Account</ul>
+                    <ul>Returns Centre</ul>
+                    <ul>Purchase Protection</ul>
+                    <ul>Amazon App Download</ul>
+                    <ul>Help</ul>
+                </li>
+            </a>
+        </div>
+    </div>
+    <div class="final">
+        <center>Conditions of Use & Sale&nbsp &nbsp
+            Privacy Notice&nbsp &nbsp
+            Interest-Based Ads<br>
+            © 1996-2024, Amazon.com, Inc. or its affiliates</center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Attribute function</title>
+        <style>
+            a::after{
+                content: '[' attr(href) ']';
+                content: '[' attr(title) ']';
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Attr function</h1>
+        <a href="www.google.com" title="navigate to google">Visit</a><br>
+        <a href="www.facebook.com" title="navigate to facebook">Visit</a><br>
+        <a href="www.instagram.com" title="navigate to instagram">Visit</a><br>
+    </body>
+</html>
